@@ -47,3 +47,14 @@ console.log(name)// see new list of items in array without mohan
 const removefirstname = name.shift();
 console.log(removefirstname)//Ram name removed from first
 console.log(name)//see new list of items in array without Ram
+
+//slice : used to remove items or elements from an array if we know index
+const mission = ["Alpha" ,"delta" ,"gama",]
+console.log(mission) 
+
+const missionvalue = mission.indexOf("gama")
+if (missionvalue !== -1) {
+  mission.splice(missionvalue, 1); //here 1 refer to 
+//number of element we want to remove, if we convert it 2 than it will remove one more next element means total remove will be of two elements ,eg if we add lol in mission array and replace 1 with 2 than gamma and lol both removed
+}
+console.log(mission)
