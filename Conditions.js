@@ -53,3 +53,42 @@ if (a || b || c) {
 } else {
   console.log("All conditions are false.");
 }
+//switch statement : used when deal with many cases and variables
+
+let z = 10;
+
+switch (z) {
+  case 5:
+    console.log("z is 5");
+    break;
+  case 7:
+    console.log("z is 7");
+    break;
+  case 10:
+    console.log("z is true");
+    break;
+  case 20:
+    console.log("z is 20");
+    break;
+  default:
+    console.log("z is not 5, 7, 10, or 20");
+}
+
+//without break statement
+let y = 10;
+
+switch (y) {
+  case 5:
+    console.log("y is 5");
+    break;
+  case 7:
+    console.log("y is 7");
+    break;
+  case 10:
+    console.log("y is 10");//no break statement here
+  case 20:
+    console.log("y is 20");
+    break;
+  default:
+    console.log("y is not 5, 7, 10, or 20");
+}
