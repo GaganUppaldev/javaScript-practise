@@ -92,3 +92,33 @@ switch (y) {
   default:
     console.log("y is not 5, 7, 10, or 20");
 }
+
+//ternary operator
+//condition ? expressionIfTrue : expressionIfFalse
+
+let age = 17;
+const isadult = (age >= 18)  ? "you can drive" : "you cannot drive";
+console.log(isadult);
+
+let marks = 50;
+const result = (marks>=33) ? "pass" : "fail";
+console.log(result)
+
+let resul = 75 ;
+const grade = (resul == 75) ? "B" : 
+              (resul == 60) ? "C" :
+              (resul == 50) ? "D" : "F"
+console.log(grade)
+
+function hello (){
+  return "hello world";
+}
+
+function over (){
+  return " Good Buy ";
+}
+
+let isgreeting = true ;
+let wish = isgreeting ? hello : over;
+console.log(wish)//hello fuction is called
+console.log(wish())//
