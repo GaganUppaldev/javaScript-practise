@@ -85,3 +85,22 @@ while (i < 10) {
 }
 
 console.log("Loop has ended.");
+
+//continue statement
+
+// Function to calculate the square of an integer
+function squareInteger(num) {
+  return num * num;
+}
+
+// Loop through integers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  // Skip even numbers
+  if (i % 2 !== 0) { //finds remiander
+    continue;//used to move code to next itration if condtion is not satisfied
+  }
+
+  // Calculate and print the square of the integer
+  let square = squareInteger(i);
+  console.log("The square of", i, "is", square);
+}
