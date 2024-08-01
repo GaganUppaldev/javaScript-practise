@@ -68,3 +68,20 @@ for (let i = 0 ; i < elements.length ; i++){
   
 }
 //above undifened problem was caused due to i <= elements.length because there is nothing at index 3 so it will show undefined so to fix it only < to get items till 0,1,2
+//Exiting Loop with break
+//If you want to exit a loop before all the iterations have been completed, you can use the break statement and similar to swithc statement that have break also
+
+let i = 0;
+
+while (i < 10) {
+  console.log("Iteration number:", i);
+
+  if (i === 5) {
+    console.log("Breaking out of the loop.");
+    break; // Exit the loop when i equals 5
+  }
+
+  i++;
+}
+
+console.log("Loop has ended.");
