@@ -130,3 +130,22 @@ while (i < week.length) {
     console.log("Nothing good");
   }
 }
+
+//do-while loop
+/*
+initializer
+do {
+  // code to run
+
+  final-expression
+} while (condition)
+*/
+
+
+do {
+  console.log("done program worked")
+  break
+}
+while (i=6){
+  
+}
