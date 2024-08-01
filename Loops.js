@@ -104,3 +104,29 @@ for (let i = 1; i <= 10; i++) {
   let square = squareInteger(i);
   console.log("The square of", i, "is", square);
 }
+//while
+//initializer
+/*
+while (condition) {
+  // code to run
+
+  final-expression
+}*/
+
+
+const week = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+let i = 0;
+
+while (i < week.length) {
+  console.log(week[i]);
+
+  // Increment to avoid infinite loop
+  i++;
+
+  // Check if we are at the last day of the week
+  if (week.length - 1 === i) {
+    console.log(`My favorite day is ${week[i]}`);
+  } else {
+    console.log("Nothing good");
+  }
+}
