@@ -74,6 +74,24 @@ setTimeout(function() {
 })();
 // Outputs: "IIFE"
 
+//return value 
+//The value function returns when the function completes
+
+function ret(a,b){
+
+  const sum = a+b;
+  console.log(sum)
+  return ("The sum of a and b is "+sum);
+}
+
+var a = 10;
+var b = 20;
+
+const result10 = ret(a,b);//I forgot to print result10 and suffered timeloss and again check the code
+console.log(result10)
+
+//Arrow function and printing anonymus function is very important so learn it 
+
 //4>By passing argument from other argument
 let person = { firstName: 'John', lastName: 'Doe' };
 (function() {
@@ -86,3 +104,31 @@ let show = () => {
   console.log('Arrow function');
 };
 show(); // Outputs: "Arrow function"
+
+
+//return 
+
+function ret0101(abc, def) {
+  const sum01 = abc + def;
+  console.log(sum01);
+
+  return console.log("function is over");
+  
+}
+
+
+
+
+const abc = 123;
+const def = 456;
+
+
+console.log(ret0101(abc,def))//printig the function
+
+
+
+
+
+
+
+//Remember to master arrow functions and Anonymous function
