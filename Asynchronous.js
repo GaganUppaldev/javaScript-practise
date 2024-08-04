@@ -109,3 +109,32 @@ Promise.all([fetchPromiseA, fetchPromiseB, fetchPromiseC])
   .catch((error) => {
     console.error(`Failed to fetch: ${error}`);
   });
+// here in documentatio fetch was using await but modified it and got my "i am faster " before response
+async function fetchProductsONE() {
+  console.log("I AM FASTER");
+
+  // Start the fetch operation but don't wait for it
+  const fetchPromise = fetch(
+    "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
+  );
+
+  console.log("i am faster and response is lazy");
+
+  try {
+    // Now wait for the fetch to complete
+    const response = await fetchPromise;
+    console.log(response);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+
+    // Wait for the JSON to be parsed
+    const data = await response.json();
+    console.log(data[0].name);
+  } catch (error) {
+    console.error(`Could not get products: ${error}`);
+  }
+}
+
+fetchProductsONE();
