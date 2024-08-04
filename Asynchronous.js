@@ -43,7 +43,8 @@ console.log(greeting);
 //event handlers and callback are kind of asnchronous code because they can notify user after thir task will be over but more details about it is in js documentation
 
 
-//using fetch api
+//using promises with fetch api
+//Promises are the foundation of asynchronous programming in modern JavaScript. A promise is an object returned by an asynchronous function, which represents the current state of the operation. At the time the promise is returned to the caller, the operation often isn't finished, but the promise object provides methods to handle the eventual success or failure of the operation.
 
 const fetchPromise = fetch(
   "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
