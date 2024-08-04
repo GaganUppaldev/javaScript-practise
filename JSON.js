@@ -45,3 +45,51 @@ const json =   //i added json variabile
 console.log(json.members[0].name);
 console.log(json.members[1].name);
 console.log(json.members[2].name);
+
+
+//example
+
+async function populate() {
+  const requestURL =
+    "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+  const request = new Request(requestURL);
+
+  const response = await fetch(request);//doing to url
+  const superHeroesText = await response.text();//data of text
+
+  const superHeroes = JSON.parse(superHeroesText);//getting final data
+  populateHeader(superHeroes);
+  populateHeroes(superHeroes);
+}
+
+
+function populateHeader(superHeroes) { //func
+  
+  console.log('Header populated with:', superHeroes);
+}
+
+function populateHeroes(superHeroes) { //func 
+  
+  console.log('Heroes populated with:', superHeroes);
+}
+
+
+populate();
+
+const first = populateHeader;
+const sec = populateHeroes;
+
+console.log('First function:', first);
+console.log('Second function:', sec);
+//got data two from API and printed data
+
+
+
+
+
+
+
+
+
+
+  
