@@ -6,3 +6,6 @@ Multiple js files will be here and i am mastering concepts from official documen
 
 Here is link of documentation i am using to revise and master concepts 
 https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/
+
+LEFT THING : 
+in async section building baisc alarm project is pending
