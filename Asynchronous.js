@@ -138,3 +138,28 @@ async function fetchProductsONE() {
 }
 
 fetchProductsONE();
+
+//above did every thing inside function 
+//Below we link function with variable
+
+async function fetchProductsB() {
+  const response = await fetch(
+    "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
+  );// fetch worked and response is ready to use
+  if (!response.ok) {
+    throw new Error(`HTTP error: ${response.status}`);
+  }
+  const data = await response.json();//got data from response
+  return data;//returned data
+}
+
+const promise = fetchProductsB(); //went to function  and returned promise
+promise // function reuturened data and we can use it acess it with promise
+  .then((data) => {
+    console.log(data[0].name+"from function fetch ProbuctB");//return data
+  })
+  .catch((error) => {
+    console.error(`Could not get products: ${error}`);//for error catching
+  });
+
+
