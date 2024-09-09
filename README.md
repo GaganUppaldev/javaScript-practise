@@ -9,3 +9,5 @@ https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/
 
 LEFT THING : 
 in async section building baisc alarm project is pending
+
+//here html files are not included means only js is here nothing related to devlopment is here
